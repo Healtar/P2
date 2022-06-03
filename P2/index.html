@@ -1,67 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-               <a href="index.html">
-            <img src="img/logo/Booki@3x.png" alt="logo" width="50%">
-        </a>
-        <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
 
-        </ul>
-        </nav>
-     
-        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+    <div class="container mx-auto">
 
-        <!-- barre recherche -->
-        <form id="searchBar">
-            <i class="location fa-solid fa-location-dot"></i><input placeholder="Marseille, France" type="text"><button>Rechercher</button>
-        </form>
+        <header>
 
-        <div id="filter">
-            <h2>Filtres</h2>
-            <ul>
-                <li><i class="fa-solid fa-circle fa-euro-sign"></i><a href="">Economique</a></li>
-            </ul>
-        </div>
-     
-        <i id="infoHeaderIcon" class="fa-solid fa-info"></i><p class="infoText">Plus de 500 logements sont disponibles dans cette ville</p>
-        
-    </header>
-    <main>
+            <nav class="main-nav">
 
-    </main>
+                <ul class="d-flex">
+
+                    <!-- logo -->
+                    <li id="logo">
+                        <a href="index.html" >
+                            <img src="img\logo\Booki.png" alt="logo">
+                        </a>
+                    </li>
+                    <!-- logo -->
+
+                    <li class="d-ib nav-item">
+                        <a href="" class="color-black">Hébergements</a>
+                    </li>
+
+                    <li class="d-ib nav-item">
+                        <a href="" class="color-black">Activités</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div>
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <!-- barre rechercher -->
+            <form id="recherche">
+
+                <i class="fa-solid location fa-location-dot"></i>
+
+                <input type="text" placeholder="Marseille, France">
+                
+                <button type="button">RECHERCHER</button>
+
+            </form>
+         <!-- barre rechercher -->
+
+         <!-- filtres -->
+            <div id="filtres">
+                <span>Filtres</span>
+
+                <div class="d-ib">
+                    <span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-euro-sign fa-stack-1x"></i>
+                      </span>
+                    <span>Economique</span>
+                </div>
+
+                <div class="d-ib">
+                    <i></i>
+                    <span></span>
+                </div>
+
+                <div class="d-ib">
+                    <i></i>
+                    <span></span>
+                </div class="d-ib">
+
+                <div class="d-ib">
+                    <i></i>
+                    <span></span>
+                </div>
+            </div>
+        <!-- filtres -->
+        </header>
+
+        <main>
+
+            <!-- gauche -->
+            <section>
+
+            </section>
+            <!-- gauche -->
+
+            <!-- droite -->
+            <section>
+
+            </section>
+            <!-- droite -->
+
+            <!-- bas -->
+            <section>
+
+            </section>
+            <!-- bas -->
+
+        </main>
+    </div>
+
     <footer>
-        <ul>
-            <li><h3>A propos</h3></li>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-        </ul>
 
-        <ul>
-            <li><h3>Nos hébergements</h3></li>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-
-        <ul>
-            <li><h3>Assistance</h3></li>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-        </ul>
     </footer>
+
+
+
 </body>
+
 </html>
