@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booki</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,21 +15,18 @@
 
 <body>
 
-    <div class="container mx-auto">
+    <header>
+        <div class="container">
+            <nav class="main-nav flex">
 
-        <header>
+                <h1 id="logo">
 
-            <nav class="main-nav">
+                    <span hidden>Booki</span>
+                    <img src="img\logo\Booki.png" alt="Booki">
 
-                <ul class="d-flex">
+                </h1>
 
-                    <!-- logo -->
-                    <li id="logo">
-                        <a href="index.html" >
-                            <img src="img\logo\Booki.png" alt="logo">
-                        </a>
-                    </li>
-                    <!-- logo -->
+                <ul>
 
                     <li class="d-ib nav-item">
                         <a href="" class="color-black">Hébergements</a>
@@ -53,67 +50,113 @@
                 <i class="fa-solid location fa-location-dot"></i>
 
                 <input type="text" placeholder="Marseille, France">
-                
+
                 <button type="button">RECHERCHER</button>
 
             </form>
-         <!-- barre rechercher -->
+            <!-- barre rechercher -->
 
-         <!-- filtres -->
+            <!-- filtres -->
             <div id="filtres">
-                <span>Filtres</span>
+                <h3>Filtres</h3>
 
-                <div class="d-ib">
-                    <span class="fa-stack fa-1x">
-                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
-                        <i class="fa fa-euro-sign fa-stack-1x"></i>
-                      </span>
+                <div class="">
+<a href="" >
+                    <i class="fas fa-money-bill-wave eco"></i>
                     <span>Economique</span>
+</a>
                 </div>
 
-                <div class="d-ib">
-                    <i></i>
-                    <span></span>
+                <div class="">
+ <a href="" >
+                    <i class="fas fa-child-reaching famille"></i>
+                    <span>Familial</span>
+</a>
                 </div>
 
-                <div class="d-ib">
-                    <i></i>
-                    <span></span>
-                </div class="d-ib">
+                <div>
+                    <a href="" >
+                        <i class="fas fa-heart romantique"></i>
+                        <span>Romantique</span>
+                    </a>
+                </div>
 
-                <div class="d-ib">
-                    <i></i>
-                    <span></span>
+                <div class="">
+ <a href="" >
+                    <i class="fas fa-dog pets"></i>
+                    <span>Animaux autorisés</span>
+</a>
                 </div>
             </div>
-        <!-- filtres -->
-        </header>
+            <!-- filtres -->
+        </div>
+    </header>
 
-        <main>
+    <main>
 
-            <!-- gauche -->
-            <section>
+        <!-- gauche -->
+        <section>
 
-            </section>
-            <!-- gauche -->
+        </section>
+        <!-- gauche -->
 
-            <!-- droite -->
-            <section>
+        <!-- droite -->
+        <section>
 
-            </section>
-            <!-- droite -->
+        </section>
+        <!-- droite -->
 
-            <!-- bas -->
-            <section>
+        <!-- bas -->
+        <section>
 
-            </section>
-            <!-- bas -->
+        </section>
+        <!-- bas -->
 
-        </main>
-    </div>
+    </main>
+
 
     <footer>
+        <div class="container flex">
+            <ul>
+                <li>
+                    <h3>A propos</h3>
+                </li>
+                <li>
+                    <a href="" >Fonctionnement du site</a>
+                </li>
+                <li>
+                    <a href="" >Conditions général de vente</a>
+                </li>
+                <li>
+                    <a href="" >Données et confidentialité</a>
+                </li>
+            </ul>
 
+            <ul>
+                <li>
+                    <h3>Nos hébergements</h3>
+                </li>
+                <li>
+                    <a href="#" >Charte qualité</a>
+                </li>
+                <li>
+                    <a href="#" >Soumettre votre hôtel</a>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Assistance</h3>
+                </li>
+                <li>
+                    <a href="#" >Centre d'aide</a>
+                </li>
+                <li>
+                    <a href="#" >Nous contacter</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
 
