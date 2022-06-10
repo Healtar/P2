@@ -33,6 +33,10 @@ h1{
     margin: 0;
 }
 
+h2{
+    margin: 0;
+}
+
 .mx-auto{
     margin: 0 auto;
 }
@@ -47,9 +51,9 @@ body{
 
 .container{
     max-width: 1800px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
-
+/* header */
 /* nav */
 
 #logo{
@@ -72,16 +76,20 @@ body{
 
 .nav-item a{
     text-decoration: none;
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
 .nav-item a:hover{
     margin: 0;
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 /* nav */
+
+header h2{
+    margin: 10px 0;
+}
 
 /* rechercher */
 
@@ -126,7 +134,7 @@ form button{
     display: flex;
     align-items: flex-end;
     column-gap: 30px;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 #filtres h3{
@@ -175,12 +183,35 @@ form button{
 }
 /* filtres */
 
+/* header */
+
+/* main */
+
+/* info */
+#info i{
+    border: 1px solid #d8d8d8;
+    padding: 5px 10px;
+    border-radius: 40px;
+    color: #0065FC;
+    
+}
+
+#info p{
+    margin: auto 10px;
+}
+
+#info{
+    margin: 10px 0;
+}
+/* info */
+
+/* main */
 /* footer */
 
 footer{
     background-color: #F2F2F2;
     line-height: 1.8;
-    padding: 30px 0;
+    padding: 10px 0;
 }
 
 footer h3{
