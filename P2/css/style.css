@@ -145,39 +145,49 @@ form button{
     margin: auto 0;
 }
 
-#filtres div{
+#filtres a{
+    height: 40px;
     justify-content: center;
  display: flex;
  flex-wrap: wrap;
  border: 1px solid #d8d8d8;
  border-radius: 30px;
- padding: 5px 20px 5px 5px;
-}
-
-#filtres .eco{
-    padding: 15px 14px;
-}
-
-#filtres .famille{
-    padding: 14px 16px;
-}
-
-#filtres .romantique{
-    padding: 14px 15px;
-}
-
-#filtres .pets{
-    padding: 15px 14px;
+ /* padding: 5px 20px 5px 5px; */
+ padding: 0px 10px;
 }
 
 #filtres i{
    
+    margin-top: -1px;
+    margin-bottom: -1px;
+margin-right: 10px;
+margin-left: -15px;
+     /* margin: -6px 10px -6px -7px; */
+     background-color: #DEEBFF;
+     color: #0065FC;
+     border-radius: 40px;
+ }
+
+#filtres .eco{
    
-    margin: -6px 10px -6px -7px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 40px;
+ padding: 12px 12px 0px 12px;
 }
+
+#filtres .famille{
+  
+    padding: 12px 14px 0px 14px;
+}
+
+#filtres .romantique{
+    padding: 12px 12px;
+}
+
+#filtres .pets{
+
+    padding: 12px 12px;
+}
+
+
 
 #filtres span{
     padding: 4px;
