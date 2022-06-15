@@ -284,5 +284,10 @@ footer li a {
     .container{
         max-width: 300px;
     }
+
+    footer .flex{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 /* media query */
