@@ -69,10 +69,11 @@ body {
 
 .main-nav ul {
     justify-content: flex-end;
+    display: flex;
     padding: 0;
 }
 
-.main-nav ul li {
+.nav-item {
     margin: 20px 5px;
 }
 
@@ -81,7 +82,7 @@ body {
     padding: 40px 20px;
 }
 
-.nav-item a:hover {
+.nav-item:active {
     margin: 0;
     color: #0065FC;
     border-top: 3px solid #0065FC;
@@ -108,7 +109,7 @@ header h2 {
 }
 
 
-form input {
+#recherche input {
 
     padding: 14px;
     border-left: none;
@@ -119,18 +120,22 @@ form input {
 
 }
 
-form input:focus {
+#recherche input:focus {
     outline: none;
 }
 
 
-form button {
+#recherche button {
     color: #ffffff;
     background-color: #0065FC;
     padding: 15px;
     font-weight: bold;
     border: none;
     border-radius: 0 20px 20px 0;
+}
+
+#recherche button i{
+    display: none;
 }
 
 /* rechercher */
@@ -251,7 +256,7 @@ footer li a {
 /* footer */
 
 /* media query */
-@media (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 720px){
 
     body{
         font-size: 14px;
@@ -261,20 +266,37 @@ footer li a {
         margin: auto;
     }
 
-    nav{
+    header{
+        text-align: left;
+    }
+
+    .main-nav{
         flex-direction: column;
     }
 
-    nav ul{
-       display: inline-block;
-       margin: 0 auto;
+    .main-nav ul{
+       justify-content: center;
+    }
+
+   
+    .nav-item{
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 
     .nav-item a{
         padding: 0;
-        
+        width: 100%;
      
     }
+
+    .nav-item:active{
+        border: 0;
+        border-bottom: 2px solid #0065FC;
+    }
+
+  
 
     .d-ib{
         display: block;
@@ -282,8 +304,41 @@ footer li a {
     }
 
     .container{
-        max-width: 300px;
+        max-width: 320px;
     }
+
+    /* recherche */
+
+    #recherche{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    #recherche button{
+        border-radius: 15px 15px;
+    }
+
+    #recherche button span{
+        display: none;
+    }
+
+    #recherche button i{
+        display: block;
+    }
+    /* recherche */
+
+    /* filtres */
+
+    #filtres{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #filtres h3{
+        width: 100%;
+    }
+
+    /* filtres */
 
     footer .flex{
         flex-direction: column;
