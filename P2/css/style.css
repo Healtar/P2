@@ -74,16 +74,17 @@ body {
 }
 
 .nav-item {
-    margin: 20px 5px;
+    
+    padding: 40px 20px;
 }
 
 .nav-item a {
     text-decoration: none;
-    padding: 40px 20px;
+    
 }
 
-.nav-item:active {
-    margin: 0;
+.nav-item:hover {
+  
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
