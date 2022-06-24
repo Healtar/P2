@@ -524,5 +524,30 @@ footer li a {
         flex-direction: column;
         gap: 20px;
     }
+
+
+    /* main */
+    /* top */
+    #top{
+        display: flex;
+  
+        flex-flow: column-reverse;
+    }
+    #section-gauche{
+        width: 100%;
+        border-radius: 0;
+        background-color: #ffffff;
+    }
+    #section-droite{
+        width: 100%;
+        border-radius: 0;
+    }
+    /* left */
+    /* left */
+
+    /* top */
+
+    /* main */
+
 }
 /* media query */
