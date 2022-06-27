@@ -243,7 +243,7 @@ header h2 {
 
 #section-gauche{
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 40px 0;
     width: 70%;
     border-radius: 20px;
 }
@@ -251,7 +251,8 @@ header h2 {
 
 
 #section-gauche .card-container{
-    
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
@@ -334,7 +335,7 @@ transition: 0.2s;
 #section-droite{
     width: 30%;
     background-color:#F2F2F2;
-    padding: 40px 30px 20px 30px;
+    padding: 40px 0px 20px 0px;
     border-radius: 20px;
 }
 
@@ -351,6 +352,8 @@ transition: 0.2s;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #section-droite .card{
@@ -436,7 +439,7 @@ footer li a {
 /* footer */
 
 /* media query */
-@media (min-width: 320px) and (max-width: 720px){
+@media (min-width: 400px) and (max-width: 720px){
 
     body{
         font-size: 14px;
@@ -448,6 +451,7 @@ footer li a {
 
     header{
         text-align: left;
+        padding: 0 20px;
     }
 
     .main-nav{
@@ -484,7 +488,7 @@ footer li a {
     }
 
     .container{
-        max-width: 320px;
+        max-width: 400px;
     }
 
     /* recherche */
@@ -512,6 +516,7 @@ footer li a {
     #filtres{
         flex-wrap: wrap;
         gap: 15px;
+       
     }
 
     #filtres h3{
@@ -527,20 +532,46 @@ footer li a {
 
 
     /* main */
+    #info{
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
     /* top */
     #top{
         display: flex;
   
         flex-flow: column-reverse;
     }
+
+
+    
     #section-gauche{
         width: 100%;
         border-radius: 0;
         background-color: #ffffff;
     }
+
+    #section-gauche .card-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #section-gauche .card{
+        width: 100%;
+    }
+
+    #section-gauche .card-img{
+        height: 120px;
+    }
+
     #section-droite{
         width: 100%;
         border-radius: 0;
+    }
+
+    #section-droite .card-container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /* left */
     /* left */
@@ -548,6 +579,14 @@ footer li a {
     /* top */
 
     /* main */
+    /* footer */
+
+    footer ul{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* footer */
 
 }
 /* media query */
