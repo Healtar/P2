@@ -409,16 +409,100 @@ transition: 0.2s;
 
 
 /* droite */
-
-
 /* top */
 
+/* bot */
+
+.h-12{
+    height: calc(100% - 40px);
+}
+
+.h-8{
+    height: calc(100% * (8 / 12) - 40px);
+}
+
+.h-7{
+    height: calc(100% * (7 / 12) - 40px);
+}
+
+.h-6{
+    height: calc(100% * (6 / 12) - 40px);
+}
+
+.h-5{
+    height: calc(100% * (5 / 12) - 40px);
+}
+
+.h-4{
+    height: calc(100% * (4 / 12) - 40px);
+}
+
+.h-3{
+    height: calc(100% * (3 / 12) - 40px);
+}
+
+#bot{
+    margin-top: 50px;
+}
+
+#bot h2{
+    margin: 20px 0;
+}
+
+#bot .card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    gap: 40px
+;
+}
+
+#bot .card h3{
+    margin: 0px 0;
+    vertical-align: middle;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+#bot .card{
+    width: calc(100% / 4 - 40px);
+    
+    max-height: 100%;
+    box-shadow: 5px 5px 20px #d8d8d8;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+#bot .card:hover{
+    box-shadow: 13px 13px 20px #d8d8d8;
+    transition: 0.2s;
+}
+
+#bot .card-img{
+    position: relative;
+    overflow: hidden;/*3*/
+    border-radius: 15px 15px 0 0;
+    height: calc(100% - 50px);
+}
+
+#bot .card-img img{
+    position: absolute;
+    /*4*/
+    /*5 - Méthode de centrage en fonction de la taille de l'image */
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* bot */
 /* main */
 /* footer */
 
 footer {
     background-color: #F2F2F2;
-    line-height: 1.8;
+    line-height: 2;
     padding: 10px 0;
 }
 
@@ -439,7 +523,7 @@ footer li a {
 /* footer */
 
 /* media query */
-@media (min-width: 400px) and (max-width: 720px){
+@media (max-width: 768px){
 
     body{
         font-size: 14px;
@@ -577,6 +661,28 @@ footer li a {
     /* left */
 
     /* top */
+
+    /* bot */
+
+    #bot{
+        padding-left: 20px;
+padding-right: 20px;
+margin-top: 0;
+    }
+
+    #bot .card-container{
+        height: auto;
+        
+    }
+
+    #bot .card-img{
+        height: 130px;
+    }
+
+    #bot .card{
+        width: 100%;
+    }
+    /* bot */
 
     /* main */
     /* footer */
