@@ -421,31 +421,31 @@ header h2 {
 
 /* bot */
 
-.h-12 {
+.lh-12 {
     height: calc(100% - 40px);
 }
 
-.h-8 {
+.lh-8 {
     height: calc(100% * (8 / 12) - 40px);
 }
 
-.h-7 {
+.lh-7 {
     height: calc(100% * (7 / 12) - 40px);
 }
 
-.h-6 {
+.lh-6 {
     height: calc(100% * (6 / 12) - 40px);
 }
 
-.h-5 {
+.lh-5 {
     height: calc(100% * (5 / 12) - 40px);
 }
 
-.h-4 {
+.lh-4 {
     height: calc(100% * (4 / 12) - 40px);
 }
 
-.h-3 {
+.lh-3 {
     height: calc(100% * (3 / 12) - 40px);
 }
 
@@ -737,7 +737,7 @@ footer li a:hover {
     /* footer */
 
     footer {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     footer .flex {
@@ -760,49 +760,102 @@ footer li a:hover {
 
     }
 
-    #filtres a{
+    #filtres a {
         flex-wrap: nowrap;
     }
 
     #top {
-        
+
         flex-flow: column-reverse;
     }
 
     #top #section-gauche {
         width: 100%;
     }
-    #section-gauche a{
+
+    #section-gauche a {
         width: 100%;
     }
 
-    #section-gauche .card{
+    #section-gauche .card {
         width: 220px;
     }
 
-    #section-droite{
+    #section-droite {
         width: 100%;
     }
 
-    #section-droite #card-container-header{
+    #section-droite #card-container-header {
         width: 100%;
     }
 
-    #section-droite .card-container{
+    #section-droite .card-container {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    #section-droite .card{
+
+    #section-droite .card {
         width: 100%;
     }
 
-    #section-droite .card .card-img{
+    #section-droite .card .card-img {
         width: 200px;
     }
 
-    #section-droite .stars{
+    #section-droite .stars {
         margin-top: 82px;
     }
+
+    /* bot */
+
+    .mh-12 {
+        height: calc(100% - 20px);
+    }
+
+    .mh-8 {
+        height: calc(100% * (8 / 12) - 20px);
+    }
+
+    .mh-7 {
+        height: calc(100% * (7 / 12) - 20px);
+    }
+
+    .mh-6 {
+        height: calc(100% * (6 / 12) - 20px);
+    }
+
+    .mh-5 {
+        height: calc(100% * (5 / 12) - 20px);
+    }
+
+    .mh-4 {
+        height: calc(100% * (4 / 12) - 20px);
+    }
+
+    .mh-3 {
+        height: calc(100% * (3 / 12) - 20px);
+    }
+
+    #bot .card-container {
+        height: 300px;
+        font-size: 0.8em;
+        gap: 20px;
+    }
+
+    #bot .card-container .card {}
+
+    /* bot */
+    /* footer */
+    footer {
+        margin-top: 30px;
+        line-height: 1.7;
+    }
+
+    footer .flex{
+        gap: 120px;
+    }
+    /* footer */
+
 }
 
 /* tablette */
