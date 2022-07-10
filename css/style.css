@@ -54,6 +54,7 @@ body {
 .container {
     max-width: 1400px;
     margin: 0px auto;
+    padding: 0 20px;
 }
 
 /* header */
@@ -305,14 +306,9 @@ header h2 {
 }
 
 #section-gauche .card-img img {
-    width: 150%;
-    /*4*/
+    width: 100%;
+    object-fit: contain;
 
-    /*5 - Méthode de centrage en fonction de la taille de l'image */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #section-gauche .card-body {
@@ -421,7 +417,7 @@ header h2 {
 
 /* bot */
 
-.lh-12 {
+/* .lh-12 {
     height: calc(100% - 40px);
 }
 
@@ -447,10 +443,24 @@ header h2 {
 
 .lh-3 {
     height: calc(100% * (3 / 12) - 40px);
+} */
+
+.f-10{
+    flex-basis: calc(100% - 20px);
 }
+
+.f-6{
+    flex-basis: calc(60% - 30px);
+}
+
+.f-4{
+    flex-basis: calc(40% - 30px);
+}
+
 
 #bot {
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 #bot h2 {
@@ -460,6 +470,7 @@ header h2 {
 #bot .card-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     height: 500px;
     gap: 40px;
@@ -836,10 +847,13 @@ footer li a:hover {
         height: calc(100% * (3 / 12) - 20px);
     }
 
+    /* flex a checker pour grille */
+
     #bot .card-container {
         height: 300px;
         font-size: 0.8em;
         gap: 20px;
+        justify-content: space-between;
     }
 
     #bot .card-container .card {}
