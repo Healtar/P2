@@ -57,8 +57,12 @@ body {
     padding: 0 20px;
 }
 
-/* header */
-/* nav */
+/**************** HEADER ******************/
+/*****************************************/
+
+
+/***************** NAV ******************/
+/***************************************/
 
 #logo {
     margin-right: auto;
@@ -92,13 +96,21 @@ body {
     padding-top: 37px;
 }
 
-/* nav */
+/***************** NAV ******************/
+/***************************************/
 
-header h2 {
-    margin: 10px 0;
+.main-nav ~ div{
+    margin: 20px 0;
+    line-height: 1.2;
 }
 
-/* rechercher */
+.main-nav ~ div strong{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/************** RECHERCHE ***************/
+/****************************************/
 
 #recherche {
     display: flex;
@@ -142,9 +154,13 @@ header h2 {
     display: none;
 }
 
-/* rechercher */
+    /************** RECHERCHE ***************/
+    /****************************************/
 
-/* filtres */
+    /****************** FILTRES ******************/
+    /********************************************/
+
+
 #filtres {
     display: flex;
     align-items: flex-end;
@@ -152,8 +168,14 @@ header h2 {
     margin: 30px 0;
 }
 
-#filtres h3 {
+#filtres ul{
+    display: flex;
+    column-gap: 30px;
+}
+
+#filtres strong {
     margin: auto 0;
+    font-size: 1.2em;
 }
 
 #filtres a {
@@ -165,7 +187,6 @@ header h2 {
 
     border: 1px solid #d8d8d8;
     border-radius: 30px;
-    /* padding: 5px 20px 5px 5px; */
     padding: 0px 10px;
 }
 
@@ -173,9 +194,7 @@ header h2 {
 
     margin-top: -1px;
     margin-bottom: -1px;
-    /* margin-right: 5px; */
     margin-left: -15px;
-    /* margin: -6px 10px -6px -7px; */
     background-color: #DEEBFF;
     color: #0065FC;
     border-radius: 40px;
@@ -210,13 +229,18 @@ header h2 {
     font-weight: bold;
 }
 
-/* filtres */
+    /****************** FILTRES ******************/
+    /********************************************/
 
-/* header */
+    /**************** HEADER ******************/
+    /*****************************************/
 
-/* main */
+    /****************** MAIN *******************/
+    /******************************************/
 
-/* info */
+    /****************** INFO ******************/
+    /*****************************************/
+
 #info i {
     border: 1px solid #d8d8d8;
     padding: 5px 10px;
@@ -233,9 +257,12 @@ header h2 {
     margin: 30px 0;
 }
 
-/* info */
+    /****************** INFO ******************/
+    /*****************************************/
 
-/* top */
+
+    /***************** TOP ***********************/
+    /********************************************/
 
 #top {
     display: flex;
@@ -243,11 +270,24 @@ header h2 {
     gap: 40px;
 }
 
-/* gauche */
+#top .section-header{
+    padding: 0 30px;
+    margin: 20px 0;
+}
+
+.section-footer{
+    padding: 0 30px;
+    margin: 20px 0;
+}
+
+
+
+/************** GAUCHE ***************/
+/************************************/
 
 #section-gauche {
     background-color: #F2F2F2;
-    padding: 40px 0;
+    padding: 20px 0;
     width: 70%;
     border-radius: 20px;
 }
@@ -268,7 +308,7 @@ header h2 {
 }
 
 #section-gauche .card {
-    width: 280px;
+    width: calc(100% / 3 - 20px);
     padding: 5px;
 
     background-color: #ffffff;
@@ -282,19 +322,17 @@ header h2 {
 
 }
 
-#section-gauche .card-body h3 {
-    margin: 10px 0;
+#section-gauche .card-body strong {
+  
     font-size: 16px;
 }
 
 #section-gauche .card-body p {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 14px;
 }
 
-#section-gauche .card-body .stars {
-    margin-top: 10px;
-}
+
 
 #section-gauche .card-img {
 
@@ -303,10 +341,11 @@ header h2 {
     overflow: hidden;
     /*3*/
     border-radius: 15px 15px 0 0;
+    margin-bottom: 10px;
 }
 
 #section-gauche .card-img img {
-    width: 100%;
+    width: 150%;
     object-fit: contain;
 
 }
@@ -314,6 +353,8 @@ header h2 {
 #section-gauche .card-body {
     padding: 0 10px;
 }
+
+
 
 .star-full {
     color: #0065FC;
@@ -323,29 +364,37 @@ header h2 {
     color: #d8d8d8;
 }
 
-.card-container a {
+.section-footer a {
     color: #000000;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-/* gauche */
+/************** GAUCHE ***************/
+/************************************/
 
-/* droite */
+
+/************* DROITE **************/
+/**********************************/
 
 #section-droite {
     width: 30%;
     background-color: #F2F2F2;
-    padding: 40px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     border-radius: 20px;
 }
 
-#card-container-header {
+#section-droite .section-header {
     display: flex;
     justify-content: space-between;
 }
 
-#card-container-header i {
+#section-droite .card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+#section-droite .section-header i {
     padding-top: 10px;
 }
 
@@ -359,7 +408,7 @@ header h2 {
 
 #section-droite .card {
     width: 100%;
-    height: 160px;
+    height: 140px;
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
@@ -398,9 +447,9 @@ header h2 {
     width: 50%;
 }
 
-#section-droite .card-body h3 {
+#section-droite .card-body strong {
     font-size: 16px;
-    margin: 10px 0;
+    padding: 5px 0;
 }
 
 #section-droite .card-body p {
@@ -408,42 +457,21 @@ header h2 {
 }
 
 #section-droite .stars {
-    margin-top: 60px;
+   margin-top: auto;
 }
 
 
-/* droite */
-/* top */
+    /***************** DROITE ********************/
+    /********************************************/
 
-/* bot */
 
-/* .lh-12 {
-    height: calc(100% - 40px);
-}
+    /***************** TOP ***********************/
+    /********************************************/
 
-.lh-8 {
-    height: calc(100% * (8 / 12) - 40px);
-}
+    /***************** BOT **********************/
+    /*******************************************/   
 
-.lh-7 {
-    height: calc(100% * (7 / 12) - 40px);
-}
 
-.lh-6 {
-    height: calc(100% * (6 / 12) - 40px);
-}
-
-.lh-5 {
-    height: calc(100% * (5 / 12) - 40px);
-}
-
-.lh-4 {
-    height: calc(100% * (4 / 12) - 40px);
-}
-
-.lh-3 {
-    height: calc(100% * (3 / 12) - 40px);
-} */
 
 .f-10{
     flex-basis: calc(100% - 20px);
@@ -476,11 +504,11 @@ header h2 {
     gap: 40px;
 }
 
-#bot .card h3 {
-    margin: 0px 0;
+#bot .card strong {
+    margin: 10px 0;
     vertical-align: middle;
     height: 30px;
-    margin-top: 16px;
+    font-size: 1.1em;
     margin-left: 20px;
 }
 
@@ -504,6 +532,7 @@ header h2 {
     /*3*/
     border-radius: 15px 15px 0 0;
     height: calc(100% - 50px);
+    margin-bottom: 15px;
 }
 
 #bot .card-img img {
@@ -516,9 +545,14 @@ header h2 {
     transform: translate(-50%, -50%);
 }
 
-/* bot */
-/* main */
-/* footer */
+    /***************** BOT **********************/
+    /*******************************************/
+
+    /****************** MAIN *******************/
+    /******************************************/
+
+    /***************** FOOTER *****************/
+    /*****************************************/
 
 footer {
     background-color: #F2F2F2;
@@ -545,10 +579,16 @@ footer li a:hover {
     text-shadow: 2px 2px 1px #d8d8d8;
 }
 
-/* footer */
+ /***************** FOOTER *****************/
+ /*****************************************/
 
-/* media query */
-/* smartphone */
+/****************** MEDIA QUERY *************/
+/*******************************************/
+
+
+/****************** SMARTPHONE *****************/
+/**********************************************/
+
 @media (max-width: 768px) {
 
     body {
@@ -613,7 +653,8 @@ footer li a:hover {
         padding: 0 20px;
     }
 
-    /* recherche */
+    /************** RECHERCHE ***************/
+    /****************************************/
 
     #recherche {
         max-width: 100%;
@@ -637,22 +678,30 @@ footer li a:hover {
         display: block;
     }
 
-    /* recherche */
+    /************** RECHERCHE ***************/
+    /****************************************/
 
-    /* filtres */
+    /****************** FILTRES ******************/
+    /********************************************/
 
     #filtres {
         flex-wrap: wrap;
         gap: 15px;
 
     }
+    
+    #filtres ul{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 15px;
+    }
 
     #filtres h3 {
         width: 100%;
     }
 
-    /* filtres */
-
+    /****************** FILTRES ******************/
+    /********************************************/
 
 
 
@@ -662,7 +711,9 @@ footer li a:hover {
         margin-right: -20px;
     }
 
-    /* top */
+    /***************** TOP ***********************/
+    /********************************************/
+
     #top {
         display: flex;
         gap: 25px;
@@ -673,6 +724,9 @@ footer li a:hover {
         padding-right: 20px;
         padding-left: 20px;
     }
+
+    /************** GAUCHE ***************/
+    /************************************/
 
     #section-gauche {
         width: 100%;
@@ -702,10 +756,7 @@ footer li a:hover {
         padding: 10px 0;
     }
 
-    #section-droite .stars {
-        margin-top: 55px;
-    }
-
+    
     #section-droite .card-container {
 
         gap: 10px;
@@ -716,12 +767,14 @@ footer li a:hover {
         margin: 20px 0;
     }
 
-    /* left */
-    /* left */
+    /************** GAUCHE ***************/
+    /************************************/
 
-    /* top */
+    /***************** TOP ***********************/
+    /********************************************/
 
-    /* bot */
+    /***************** BOT **********************/
+    /*******************************************/
 
     #bot {
 
@@ -740,12 +793,18 @@ footer li a:hover {
 
     #bot .card {
         width: 100%;
+        padding-bottom: 15px;
     }
 
-    /* bot */
+    /***************** BOT **********************/
+    /*******************************************/
 
-    /* main */
-    /* footer */
+    /****************** MAIN *******************/
+    /******************************************/
+
+    /***************** FOOTER *****************/
+   /*****************************************/
+
 
     footer {
         margin-top: 30px;
@@ -756,14 +815,17 @@ footer li a:hover {
         gap: 20px;
     }
 
-    /* footer */
+    /***************** FOOTER ****************/
+   /*****************************************/
 
 }
 
-/* smartphone */
+/****************** SMARTPHONE *****************/
+/**********************************************/
 
 
-/* tablette */
+/******************* TABLETTE *****************/
+/*********************************************/
 @media (min-width: 768px) and (max-width: 992px) {
     .container {
         width: 100%;
@@ -773,6 +835,16 @@ footer li a:hover {
 
     #filtres a {
         flex-wrap: nowrap;
+    }
+
+    #filtres{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    #filtres ul{
+       
+        column-gap: 30px;
     }
 
     #top {
@@ -789,7 +861,8 @@ footer li a:hover {
     }
 
     #section-gauche .card {
-        width: 220px;
+        width: calc(100% / 3 - 20px);
+        /* 100% */
     }
 
     #section-droite {
@@ -813,38 +886,22 @@ footer li a:hover {
         width: 200px;
     }
 
-    #section-droite .stars {
-        margin-top: 82px;
+ 
+
+    /***************** BOT **********************/
+    /*******************************************/
+  
+
+    .f-10{
+        flex-basis: calc(100%);
     }
-
-    /* bot */
-
-    .mh-12 {
-        height: calc(100% - 20px);
+    
+    .f-6{
+        flex-basis: calc(60% - 10px);
     }
-
-    .mh-8 {
-        height: calc(100% * (8 / 12) - 20px);
-    }
-
-    .mh-7 {
-        height: calc(100% * (7 / 12) - 20px);
-    }
-
-    .mh-6 {
-        height: calc(100% * (6 / 12) - 20px);
-    }
-
-    .mh-5 {
-        height: calc(100% * (5 / 12) - 20px);
-    }
-
-    .mh-4 {
-        height: calc(100% * (4 / 12) - 20px);
-    }
-
-    .mh-3 {
-        height: calc(100% * (3 / 12) - 20px);
+    
+    .f-4{
+        flex-basis: calc(40% - 10px);
     }
 
     /* flex a checker pour grille */
@@ -856,10 +913,16 @@ footer li a:hover {
         justify-content: space-between;
     }
 
-    #bot .card-container .card {}
+    #bot .card{
+        width: calc(100% / 4 - 20px);
+    }
+    
 
-    /* bot */
-    /* footer */
+    /***************** BOT **********************/
+    /*******************************************/
+  
+    /***************** FOOTER *****************/
+    /*****************************************/
     footer {
         margin-top: 30px;
         line-height: 1.7;
@@ -868,9 +931,14 @@ footer li a:hover {
     footer .flex{
         gap: 120px;
     }
-    /* footer */
+   /***************** FOOTER *****************/
+   /*****************************************/
 
 }
 
-/* tablette */
-/* media query */
+/******************* TABLETTE *****************/
+/*********************************************/
+
+
+/****************** MEDIA QUERY *************/
+/*******************************************/
