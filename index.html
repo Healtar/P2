@@ -15,7 +15,7 @@
 
 <body>
 
-    <header>
+    <header class="main-header">
         <div class="container">
             <nav class="main-nav flex">
 
@@ -26,27 +26,26 @@
                     </a>
                 </h1>
 
-                <ul>
+                <ul class="flex">
 
-                    <li class="d-ib nav-item">
-                        <a href="" class="color-black nav-link">Hébergements</a>
+                    <li class="nav-item">
+                        <a href="#" class="color-black nav-link">Hébergements</a>
                     </li>
 
-                    <li class="d-ib nav-item">
-                        <a href="" class="color-black nav-link">Activités</a>
+                    <li class="nav-item">
+                        <a href="#" class="color-black nav-link">Activités</a>
                     </li>
                 </ul>
 
             </nav>
 
             <div>
-                <!-- strong ici  -->
                 <p><strong>Trouvez votre hébergement pour des vacances de rêve</strong></p>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
             <!-- barre rechercher -->
-            <form id="recherche">
+            <form id="recherche" class="flex">
 
                 <i class="fa-solid location fa-location-dot"></i>
 
@@ -61,44 +60,31 @@
             <!-- barre rechercher -->
 
             <!-- filtres -->
-            <div id="filtres">
-
-                <strong>Filtres</strong> <!-- bold-->
-                <ul>
-
-
+            <div id="filtres" class="flex">
+                <strong>Filtres</strong>
+                <ul class="flex">
                     <li>
-
-
-                        <!-- a mettre dans une liste + retravailler css -->
-                        <a href="#">
-
+                        <a href="#" class="flex">
                             <i class="fas fa-money-bill-wave eco"></i>
                             <span>Economique</span>
-
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-
+                        <a href="#" class="flex">
                             <i class="fas fa-child-reaching famille"></i>
                             <span>Familial</span>
-
                         </a>
                     </li>
                     <li>
-
-                        <a href="#">
+                        <a href="#" class="flex">
                             <i class="fas fa-heart romantique"></i>
                             <span>Romantique</span>
-
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="flex">
                             <i class="fas fa-dog pets"></i>
                             <span>Animaux&nbsp;autorisés</span>
-
                         </a>
                     </li>
                 </ul>
@@ -111,19 +97,19 @@
 
         <div class="container">
             <!-- info -->
-            <section class="flex main-header" id="info">
+            <header class="flex main-header" id="info">
                 <i class="fa-solid fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </section>
+            </header>
             <!-- info -->
 
             <!-- top -->
-            <div id="top">
+            <div id="top" class="flex">
                 <!-- gauche -->
                 <section id="section-gauche">
-                    <div class="section-header">
+                    <header class="section-header">
                         <h2>Hébergements à Marseille</h2>
-                    </div>
+                    </header>
                     <div class="card-container flex">
 
                         <div class="card">
@@ -222,24 +208,24 @@
                         </div>
 
                     </div>
-                    <div class="section-footer">
+                    <footer class="section-footer">
                         <a href="#">Afficher plus</a>
-                    </div>
+                    </footer>
                 </section>
                 <!-- gauche -->
 
                 <!-- droite -->
                 <section id="section-droite">
-                    <div class="section-header">
+                    <header class="section-header flex">
                         <h2>Les plus populaires</h2>
                         <i class="fa-solid fa-star fa-lg"></i>
-                    </div>
-                    <div class="card-container">
+                    </header>
+                    <div class="card-container flex">
 
-                        <div class="card">
-                        
-                                <img src="img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-                            <div class="card-body">
+                        <div class="card flex">
+
+                            <img src="img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hébergement populaire 1">
+                            <div class="card-body flex">
                                 <strong>
                                     Hôtel Le soleil du matin
                                 </strong>
@@ -254,9 +240,9 @@
                             </div>
                         </div>
 
-                        <div class="card">
-                                <img src="img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-                            <div class="card-body">
+                        <div class="card flex">
+                            <img src="img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hébergement populaire 2">
+                            <div class="card-body flex">
                                 <strong>
                                     Au coeur de l'eau Chambre d'hôtes
                                 </strong>
@@ -271,9 +257,9 @@
                             </div>
                         </div>
 
-                        <div class="card">
-                                <img src="img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
-                            <div class="card-body">
+                        <div class="card flex">
+                            <img src="img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hébergement populaire 3">
+                            <div class="card-body flex">
                                 <strong>
                                     Hôtel Tout bleu et Blanc
                                 </strong>
@@ -299,45 +285,44 @@
                     <h2>Activités à Marseille</h2>
                 </header>
 
-                <div class="card-container section-body">
+                <div class="card-container flex section-body">
                     <div class="card f-10 mh-12 lh-12">
-                            <img src="img\activites\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                        <img src="img\activites\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                         <strong>
                             Vieux Port
                         </strong>
                     </div>
 
                     <div class="card f-6 mh-6 lh-7">
-                            <img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                        <img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                         <strong>
                             Fort de Pomègues
                         </strong>
                     </div>
 
                     <div class="card f-4 mh-6 lh-5">
-                            <img src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du Frioul">
+                        <img src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du Frioul">
                         <strong>
                             îles du Frioul
                         </strong>
                     </div>
 
                     <div class="card f-10 mh-12 lh-12">
-                            <img src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="les calanques">
+                        <img src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="les calanques">
                         <strong>
                             Parc National des Calanques
                         </strong>
                     </div>
 
                     <div class="card f-4 mh-6 lh-5">
-                            <img src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                alt="Notre-Dame-de-la-Garde">
+                        <img src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                         <strong>
                             Notre-Dame-de-la-Garde
                         </strong>
                     </div>
 
                     <div class="card f-6 mh-6 lh-7">
-                            <img src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        <img src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                         <strong>
                             Parc Longchamp
                         </strong>

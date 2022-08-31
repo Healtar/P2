@@ -12,9 +12,6 @@
     display: flex;
 }
 
-.d-ib {
-    display: inline-block;
-}
 
 li {
     list-style: none;
@@ -38,9 +35,6 @@ h2 {
     margin: 0;
 }
 
-.mx-auto {
-    margin: 0 auto;
-}
 
 
 body {
@@ -70,12 +64,11 @@ body {
 }
 
 #logo img {
-    width: 170px;
+    width: 120px;
 }
 
 .main-nav ul {
     justify-content: flex-end;
-    display: flex;
     padding: 0;
 }
 
@@ -99,12 +92,12 @@ body {
 /***************** NAV ******************/
 /***************************************/
 
-.main-nav ~ div{
+.main-nav~div {
     margin: 20px 0;
     line-height: 1.2;
 }
 
-.main-nav ~ div strong{
+.main-nav~div strong {
     font-size: 1.4em;
     font-weight: bold;
 }
@@ -113,9 +106,7 @@ body {
 /****************************************/
 
 #recherche {
-    display: flex;
     margin: 20px 0;
-
 }
 
 .location {
@@ -140,6 +131,10 @@ body {
     outline: none;
 }
 
+#recherche input::placeholder{
+    color: #000000;
+    font-size: 1.1em;
+}
 
 #recherche button {
     color: #ffffff;
@@ -150,48 +145,54 @@ body {
     border-radius: 0 20px 20px 0;
 }
 
+#recherche button:hover,
+#recherche button:focus {
+    background-color: #0043a3;
+    box-shadow: 1px 1px 10px #d8d8d8;
+    transition: .2s;
+}
+
 #recherche button i {
     display: none;
 }
 
-    /************** RECHERCHE ***************/
-    /****************************************/
+/************** RECHERCHE ***************/
+/****************************************/
 
-    /****************** FILTRES ******************/
-    /********************************************/
+/****************** FILTRES ******************/
+/********************************************/
 
 
 #filtres {
-    display: flex;
     align-items: flex-end;
     column-gap: 30px;
     margin: 30px 0;
 }
 
-#filtres ul{
-    display: flex;
+#filtres ul {
     column-gap: 30px;
 }
 
 #filtres strong {
     margin: auto 0;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 #filtres a {
     height: 40px;
-
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-
     border: 1px solid #d8d8d8;
     border-radius: 30px;
     padding: 0px 10px;
+    transition: .2s;
+}
+
+#filtres a:hover {
+    box-shadow: 1px 1px 5px #d8d8d8;
 }
 
 #filtres i {
-
     margin-top: -1px;
     margin-bottom: -1px;
     margin-left: -15px;
@@ -202,12 +203,10 @@ body {
 }
 
 #filtres .eco {
-
     padding: 12px 12px 0px 12px;
 }
 
 #filtres .famille {
-
     padding: 12px 14px 0px 14px;
 }
 
@@ -216,11 +215,8 @@ body {
 }
 
 #filtres .pets {
-
     padding: 12px 12px;
 }
-
-
 
 #filtres span {
     padding: 4px;
@@ -229,17 +225,17 @@ body {
     font-weight: bold;
 }
 
-    /****************** FILTRES ******************/
-    /********************************************/
+/****************** FILTRES ******************/
+/********************************************/
 
-    /**************** HEADER ******************/
-    /*****************************************/
+/**************** HEADER ******************/
+/*****************************************/
 
-    /****************** MAIN *******************/
-    /******************************************/
+/****************** MAIN *******************/
+/******************************************/
 
-    /****************** INFO ******************/
-    /*****************************************/
+/****************** INFO ******************/
+/*****************************************/
 
 #info i {
     border: 1px solid #d8d8d8;
@@ -257,30 +253,35 @@ body {
     margin: 30px 0;
 }
 
-    /****************** INFO ******************/
-    /*****************************************/
+/****************** INFO ******************/
+/*****************************************/
 
 
-    /***************** TOP ***********************/
-    /********************************************/
+/***************** TOP ***********************/
+/********************************************/
 
 #top {
-    display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-#top .section-header{
+#top .section-header {
     padding: 0 30px;
     margin: 20px 0;
 }
 
-.section-footer{
+.section-footer {
     padding: 0 30px;
     margin: 20px 0;
 }
 
+.star-full {
+    color: #0065FC;
+}
 
+.star-empty {
+    color: #d8d8d8;
+}
 
 /************** GAUCHE ***************/
 /************************************/
@@ -292,12 +293,9 @@ body {
     border-radius: 20px;
 }
 
-
-
 #section-gauche .card-container {
     padding-left: 30px;
     padding-right: 30px;
-    display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
     justify-content: space-between;
@@ -310,7 +308,6 @@ body {
 #section-gauche .card {
     width: calc(100% / 3 - 20px);
     padding: 5px;
-
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 5px 5px 20px #d8d8d8;
@@ -319,11 +316,9 @@ body {
 
 #section-gauche .card:hover {
     box-shadow: 15px 15px 15px #d8d8d8;
-
 }
 
 #section-gauche .card-body strong {
-  
     font-size: 16px;
 }
 
@@ -332,31 +327,15 @@ body {
     font-size: 14px;
 }
 
-
-
-
-#section-gauche  img {
+#section-gauche img {
     width: 100%;
     height: 120px;
     border-radius: 15px 15px 0 0;
-    /* width: 150%;
-    object-fit: contain; */
     object-fit: cover;
-
 }
 
 #section-gauche .card-body {
     padding: 0 10px;
-}
-
-
-
-.star-full {
-    color: #0065FC;
-}
-
-.star-empty {
-    color: #d8d8d8;
 }
 
 .section-footer a {
@@ -379,13 +358,18 @@ body {
     border-radius: 20px;
 }
 
+#section-droite .card-container {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 #section-droite .section-header {
-    display: flex;
     justify-content: space-between;
 }
 
-#section-droite .card-body{
-    display: flex;
+#section-droite .card-body {
     flex-direction: column;
 }
 
@@ -393,18 +377,9 @@ body {
     padding-top: 10px;
 }
 
-#section-droite .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 #section-droite .card {
     width: 100%;
     height: 130px;
-    display: flex;
     flex-direction: row;
     background-color: #ffffff;
     border-radius: 20px;
@@ -418,15 +393,10 @@ body {
     box-shadow: 15px 15px 15px #d8d8d8;
 }
 
-
 #section-droite .card img {
     width: 120px;
-    /*4*/
     height: 100%;
-    /*5 - Méthode de centrage en fonction de la taille de l'image */
-    border-radius: 15px  0 0 15px;
-    /* width: 150%;
-    object-fit: contain; */
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 
@@ -444,33 +414,49 @@ body {
 }
 
 #section-droite .stars {
-   margin-top: auto;
+    margin-top: auto;
 }
 
 
-    /***************** DROITE ********************/
-    /********************************************/
+/***************** DROITE ********************/
+/********************************************/
 
 
-    /***************** TOP ***********************/
-    /********************************************/
+/***************** TOP ***********************/
+/********************************************/
 
-    /***************** BOT **********************/
-    /*******************************************/   
+/***************** BOT **********************/
+/*******************************************/
 
 
-
-.f-10{
-    flex-basis: calc(100% - 20px);
+.lh-12 {
+    height: 100%;
 }
 
-.f-6{
-    flex-basis: calc(60% - 30px);
+.lh-8 {
+    height: calc(100% * (8 / 12) - 15px);
 }
 
-.f-4{
-    flex-basis: calc(40% - 30px);
+.lh-7 {
+    height: calc(100% * (7 / 12) - 15px);
 }
+
+.lh-6 {
+    height: calc(100% * (6 / 12) - 15px);
+}
+
+.lh-5 {
+    height: calc(100% * (5 / 12) - 15px);
+}
+
+.lh-4 {
+    height: calc(100% * (4 / 12) - 15px);
+}
+
+.lh-3 {
+    height: calc(100% * (3 / 12) - 15px);
+}
+
 
 
 #bot {
@@ -483,26 +469,22 @@ body {
 }
 
 #bot .card-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    height: 500px;
-    gap: 40px;
+    height: 400px;
+    gap: 30px;
 }
 
 #bot .card strong {
     margin: 10px 0;
-    vertical-align: middle;
-    height: 30px;
-    font-size: 1.1em;
-    margin-left: 20px;
+    overflow: hidden;
+    font-size: 1em;
+    padding-left: 20px;
 }
 
 #bot .card {
-    width: calc(100% / 4 - 40px);
-
-
+    width: calc(100% / 4 - 30px);
     box-shadow: 5px 5px 20px #d8d8d8;
     border-radius: 15px;
     transition: 0.2s;
@@ -513,50 +495,50 @@ body {
     transition: 0.2s;
 }
 
-
-
 #bot .card img {
-height: 80%;
-width: 100%;
-  object-fit: cover;
+    height: calc(100% - 35px);
+    margin-bottom: 5px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-    /***************** BOT **********************/
-    /*******************************************/
+/***************** BOT **********************/
+/*******************************************/
 
-    /****************** MAIN *******************/
-    /******************************************/
+/****************** MAIN *******************/
+/******************************************/
 
-    /***************** FOOTER *****************/
-    /*****************************************/
+/***************** FOOTER *****************/
+/*****************************************/
 
-footer {
+main ~ footer {
     background-color: #F2F2F2;
     line-height: 2;
     padding: 30px 0;
 }
 
-footer h3 {
+main ~ footer h3 {
     margin: 0;
     margin-bottom: 10px;
 }
 
-footer .flex {
+main ~ footer .flex {
     gap: 200px;
 }
 
-footer li a {
+main ~ footer li a {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
 }
 
-footer li a:hover {
+main ~ footer li a:hover {
     text-shadow: 2px 2px 1px #d8d8d8;
 }
 
- /***************** FOOTER *****************/
- /*****************************************/
+/***************** FOOTER *****************/
+/*****************************************/
 
 /****************** MEDIA QUERY *************/
 /*******************************************/
@@ -570,6 +552,9 @@ footer li a:hover {
     body {
         font-size: 14px;
     }
+
+/****************** HEADER *********************/
+/**********************************************/
 
     #logo {
         margin: auto;
@@ -599,12 +584,6 @@ footer li a:hover {
         border-bottom: 3px solid #F2F2F2;
     }
 
-    .nav-item a {
-
-        width: 100%;
-
-    }
-
     .nav-item:hover {
         border: 0;
         padding: 10px 0;
@@ -615,18 +594,6 @@ footer li a:hover {
         border: 0;
         padding: 10px 0;
         border-bottom: 3px solid #0065FC;
-    }
-
-
-
-    .d-ib {
-        display: block;
-
-    }
-
-    .container {
-        max-width: 100%;
-        padding: 0 20px;
     }
 
     /************** RECHERCHE ***************/
@@ -665,33 +632,32 @@ footer li a:hover {
         gap: 15px;
 
     }
-    
-    #filtres ul{
+
+    #filtres ul {
         flex-wrap: wrap;
         row-gap: 10px;
         column-gap: 15px;
     }
 
-    #filtres h3 {
-        width: 100%;
-    }
-
     /****************** FILTRES ******************/
     /********************************************/
 
+/****************** HEADER *********************/
+/**********************************************/
 
 
-    /* main */
+/****************** MAIN *********************/
+/**********************************************/
+
+    /***************** TOP ***********************/
+    /********************************************/
+
     main #top {
         margin-left: -20px;
         margin-right: -20px;
     }
 
-    /***************** TOP ***********************/
-    /********************************************/
-
     #top {
-        display: flex;
         gap: 25px;
         flex-flow: column-reverse;
     }
@@ -722,9 +688,11 @@ footer li a:hover {
         width: 100%;
     }
 
-    #section-gauche .card-img {
-        height: 120px;
-    }
+    /************** GAUCHE ***************/
+    /************************************/
+
+    /************** DROITE ***************/
+    /************************************/
 
     #section-droite {
         width: 100%;
@@ -732,9 +700,8 @@ footer li a:hover {
         padding: 10px 0;
     }
 
-    
-    #section-droite .card-container {
 
+    #section-droite .card-container {
         gap: 10px;
     }
 
@@ -743,7 +710,11 @@ footer li a:hover {
         margin: 20px 0;
     }
 
-    /************** GAUCHE ***************/
+    #section-droite .stars {
+        height: 30px;
+    }
+
+    /************** DROITE ***************/
     /************************************/
 
     /***************** TOP ***********************/
@@ -763,13 +734,16 @@ footer li a:hover {
 
     }
 
-    #bot .card-img {
-        height: 130px;
-    }
 
     #bot .card {
+        height: 150px;
         width: 100%;
         padding-bottom: 15px;
+    }
+
+    #bot .card img {
+        height: calc(100% - 20px);
+        margin-bottom: 10px;
     }
 
     /***************** BOT **********************/
@@ -779,20 +753,15 @@ footer li a:hover {
     /******************************************/
 
     /***************** FOOTER *****************/
-   /*****************************************/
+    /*****************************************/
 
-
-    footer {
-        margin-top: 30px;
-    }
-
-    footer .flex {
+    main ~  footer .flex {
         flex-direction: column;
         gap: 20px;
     }
 
     /***************** FOOTER ****************/
-   /*****************************************/
+    /*****************************************/
 
 }
 
@@ -803,28 +772,28 @@ footer li a:hover {
 /******************* TABLETTE *****************/
 /*********************************************/
 @media (min-width: 768px) and (max-width: 992px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
 
-    }
+
+    /******************* HEADER *****************/
+    /*******************************************/
 
     #filtres a {
         flex-wrap: nowrap;
     }
 
-    #filtres{
+    #filtres {
         flex-wrap: wrap;
         row-gap: 10px;
     }
 
-    #filtres ul{
-       
+    #filtres ul {
         column-gap: 30px;
     }
 
-    #top {
+    /******************* HEADER *****************/
+    /*******************************************/
 
+    #top {
         flex-flow: column-reverse;
     }
 
@@ -838,7 +807,6 @@ footer li a:hover {
 
     #section-gauche .card {
         width: calc(100% / 3 - 20px);
-        /* 100% */
     }
 
     #section-droite {
@@ -862,53 +830,73 @@ footer li a:hover {
         width: 200px;
     }
 
- 
+
 
     /***************** BOT **********************/
     /*******************************************/
-  
 
-    .f-10{
-        flex-basis: calc(100%);
-    }
-    
-    .f-6{
-        flex-basis: calc(60% - 10px);
-    }
-    
-    .f-4{
-        flex-basis: calc(40% - 10px);
+
+    .mh-12 {
+        height: calc(100%);
     }
 
-    /* flex a checker pour grille */
+    .mh-8 {
+        height: calc(100% * (8 / 12) - 10px);
+    }
+
+    .mh-7 {
+        height: calc(100% * (7 / 12) - 10px);
+    }
+
+    .mh-6 {
+        height: calc(100% * (6 / 12) - 10px);
+    }
+
+    .mh-5 {
+        height: calc(100% * (5 / 12) - 10px);
+    }
+
+    .mh-4 {
+        height: calc(100% * (4 / 12) - 10px);
+    }
+
+    .mh-3 {
+        height: calc(100% * (3 / 12) - 10px);
+    }
 
     #bot .card-container {
         height: 300px;
         font-size: 0.8em;
         gap: 20px;
-        justify-content: space-between;
     }
 
-    #bot .card{
+    #bot .card {
         width: calc(100% / 4 - 20px);
     }
-    
+
+    #bot .card img {
+        margin-bottom: 10px;
+    }
+
+    #bot .card strong {
+        padding-left: 15px;
+    }
 
     /***************** BOT **********************/
     /*******************************************/
-  
+
     /***************** FOOTER *****************/
     /*****************************************/
-    footer {
-        margin-top: 30px;
+    main ~  footer {
         line-height: 1.7;
     }
 
-    footer .flex{
+    main ~  footer .flex {
         gap: 120px;
     }
-   /***************** FOOTER *****************/
-   /*****************************************/
+
+    /***************** FOOTER *****************/
+    /*****************************************/
 
 }
 
