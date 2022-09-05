@@ -1,0 +1,19 @@
+mettre mon nom et nom formation sur première slide
+
+booki: value mettre en gras
+		Activité flex: 2
+					flex: 1
+					flex: 3
+
+		filtres: strong -> span style bold
+
+
+		Icone: revoir les icones ronds pour appliqué style qu'une fois
+
+
+	class card en balise article et titre dans card en h3
+
+
+	sass bloc__element-modificateur
+
+	changer slides montrer css que pour ce qui est important (10slide ou moins).
