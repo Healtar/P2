@@ -117,7 +117,8 @@ body {
 
 
 #recherche input {
-
+    color: #000000;
+    font-size: 1.1em;
     padding: 14px;
     border-left: none;
     border-right: none;
@@ -131,10 +132,7 @@ body {
     outline: none;
 }
 
-#recherche input::placeholder{
-    color: #000000;
-    font-size: 1.1em;
-}
+
 
 #recherche button {
     color: #ffffff;
@@ -173,7 +171,7 @@ body {
     column-gap: 30px;
 }
 
-#filtres strong {
+#filtres span:nth-child(1) {
     margin: auto 0;
     font-size: 1.2em;
     font-weight: bold;
@@ -218,7 +216,7 @@ body {
     padding: 12px 12px;
 }
 
-#filtres span {
+#filtres ul span {
     padding: 4px;
     margin: auto 0;
     color: #000000;
@@ -230,6 +228,9 @@ body {
 
 /**************** HEADER ******************/
 /*****************************************/
+
+
+
 
 /****************** MAIN *******************/
 /******************************************/
@@ -318,7 +319,8 @@ body {
     box-shadow: 15px 15px 15px #d8d8d8;
 }
 
-#section-gauche .card-body strong {
+#section-gauche .card-body h3 {
+    margin: 0;
     font-size: 16px;
 }
 
@@ -404,7 +406,8 @@ body {
     width: 50%;
 }
 
-#section-droite .card-body strong {
+#section-droite .card-body h3 {
+    margin: 0;
     font-size: 16px;
     padding: 5px 0;
 }
@@ -476,8 +479,8 @@ body {
     gap: 30px;
 }
 
-#bot .card strong {
-    margin: 10px 0;
+#bot .card h3 {
+    margin: 0;
     overflow: hidden;
     font-size: 1em;
     padding-left: 20px;
