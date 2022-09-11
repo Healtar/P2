@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap");
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,6 @@
 .flex {
     display: flex;
 }
-
 
 li {
     list-style: none;
@@ -27,6 +26,11 @@ a {
     text-decoration: none;
 }
 
+a:visited{
+    color: inherit;
+    text-decoration: inherit;
+}
+
 h1 {
     margin: 0;
 }
@@ -35,10 +39,8 @@ h2 {
     margin: 0;
 }
 
-
-
 body {
-    font-family: 'Raleway', Verdana, sans-serif;
+    font-family: "Raleway", Verdana, sans-serif;
 
     line-height: 1;
     font-size: 16px;
@@ -54,13 +56,11 @@ body {
 /**************** HEADER ******************/
 /*****************************************/
 
-
 /***************** NAV ******************/
 /***************************************/
 
 #logo {
     margin-right: auto;
-
 }
 
 #logo img {
@@ -68,36 +68,36 @@ body {
 }
 
 .main-nav ul {
-    justify-content: flex-end;
     padding: 0;
 }
 
 .nav-item {
-
     padding: 40px 20px;
 }
 
 .nav-item a {
     text-decoration: none;
-
 }
 
 .nav-item:hover {
-
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
     padding-top: 37px;
+}
+
+.nav-item:hover a {
+    color: #0065fc;
 }
 
 /***************** NAV ******************/
 /***************************************/
 
-.main-nav~div {
+.main-nav ~ div {
     margin: 20px 0;
     line-height: 1.2;
 }
 
-.main-nav~div strong {
+.main-nav ~ div strong {
     font-size: 1.4em;
     font-weight: bold;
 }
@@ -110,11 +110,10 @@ body {
 }
 
 .location {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 16px 18px;
     border-radius: 20px 0 0 20px;
 }
-
 
 #recherche input {
     color: #000000;
@@ -123,20 +122,17 @@ body {
     border-left: none;
     border-right: none;
     font-weight: bold;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 #recherche input:focus {
     outline: none;
 }
 
-
-
 #recherche button {
     color: #ffffff;
-    background-color: #0065FC;
+    background-color: #0065fc;
     padding: 15px;
     font-weight: bold;
     border: none;
@@ -147,7 +143,7 @@ body {
 #recherche button:focus {
     background-color: #0043a3;
     box-shadow: 1px 1px 10px #d8d8d8;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 #recherche button i {
@@ -160,9 +156,8 @@ body {
 /****************** FILTRES ******************/
 /********************************************/
 
-
 #filtres {
-    align-items: flex-end;
+    flex-wrap: wrap;
     column-gap: 30px;
     margin: 30px 0;
 }
@@ -183,37 +178,25 @@ body {
     border: 1px solid #d8d8d8;
     border-radius: 30px;
     padding: 0px 10px;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 #filtres a:hover {
     box-shadow: 1px 1px 5px #d8d8d8;
 }
 
-#filtres i {
+#filtres .ico-container {
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 41px;
     margin-top: -1px;
     margin-bottom: -1px;
-    margin-left: -15px;
-    background-color: #DEEBFF;
-    color: #0065FC;
+    margin-left: -12px;
+    background-color: #deebff;
+    color: #0065fc;
     border-radius: 40px;
     margin-right: 5px;
-}
-
-#filtres .eco {
-    padding: 12px 12px 0px 12px;
-}
-
-#filtres .famille {
-    padding: 12px 14px 0px 14px;
-}
-
-#filtres .romantique {
-    padding: 12px 12px;
-}
-
-#filtres .pets {
-    padding: 12px 12px;
 }
 
 #filtres ul span {
@@ -229,11 +212,20 @@ body {
 /**************** HEADER ******************/
 /*****************************************/
 
-
-
-
 /****************** MAIN *******************/
 /******************************************/
+
+.card-link {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.card-link:visited{
+    color: inherit;
+    text-decoration: inherit;
+}
 
 /****************** INFO ******************/
 /*****************************************/
@@ -242,8 +234,7 @@ body {
     border: 1px solid #d8d8d8;
     padding: 5px 10px;
     border-radius: 40px;
-    color: #0065FC;
-
+    color: #0065fc;
 }
 
 #info p {
@@ -256,7 +247,6 @@ body {
 
 /****************** INFO ******************/
 /*****************************************/
-
 
 /***************** TOP ***********************/
 /********************************************/
@@ -277,7 +267,7 @@ body {
 }
 
 .star-full {
-    color: #0065FC;
+    color: #0065fc;
 }
 
 .star-empty {
@@ -288,7 +278,7 @@ body {
 /************************************/
 
 #section-gauche {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 20px 0;
     width: 70%;
     border-radius: 20px;
@@ -313,6 +303,11 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 20px #d8d8d8;
     transition: 0.2s;
+}
+
+#section-gauche .card-link {
+    flex-direction: column;
+    gap: 10px;
 }
 
 #section-gauche .card:hover {
@@ -349,13 +344,12 @@ body {
 /************** GAUCHE ***************/
 /************************************/
 
-
 /************* DROITE **************/
 /**********************************/
 
 #section-droite {
     width: 30%;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 20px 0px 20px 0px;
     border-radius: 20px;
 }
@@ -386,13 +380,16 @@ body {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 5px;
-    gap: 20px;
     box-shadow: 5px 5px 20px #d8d8d8;
     transition: 0.2s;
 }
 
 #section-droite .card:hover {
     box-shadow: 15px 15px 15px #d8d8d8;
+}
+
+#section-droite .card-link {
+    gap: 10px;
 }
 
 #section-droite .card img {
@@ -420,17 +417,14 @@ body {
     margin-top: auto;
 }
 
-
 /***************** DROITE ********************/
 /********************************************/
-
 
 /***************** TOP ***********************/
 /********************************************/
 
 /***************** BOT **********************/
 /*******************************************/
-
 
 .lh-12 {
     height: 100%;
@@ -459,8 +453,6 @@ body {
 .lh-3 {
     height: calc(100% * (3 / 12) - 15px);
 }
-
-
 
 #bot {
     margin-top: 50px;
@@ -498,6 +490,11 @@ body {
     transition: 0.2s;
 }
 
+#bot .card-link {
+    flex-direction: column;
+    gap: 5px;
+}
+
 #bot .card img {
     height: calc(100% - 35px);
     margin-bottom: 5px;
@@ -516,7 +513,7 @@ body {
 /*****************************************/
 
 main ~ footer {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     line-height: 2;
     padding: 30px 0;
 }
@@ -546,26 +543,19 @@ main ~ footer li a:hover {
 /****************** MEDIA QUERY *************/
 /*******************************************/
 
-
 /****************** SMARTPHONE *****************/
 /**********************************************/
 
 @media (max-width: 768px) {
-
     body {
         font-size: 14px;
     }
 
-/****************** HEADER *********************/
-/**********************************************/
+    /****************** HEADER *********************/
+    /**********************************************/
 
     #logo {
         margin: auto;
-    }
-
-    header {
-        text-align: left;
-
     }
 
     .main-nav {
@@ -574,29 +564,24 @@ main ~ footer li a:hover {
         margin-right: -20px;
     }
 
-    .main-nav ul {
-        justify-content: center;
-    }
-
-
     .nav-item {
         width: 100%;
         margin: 0;
         text-align: center;
         padding: 10px 0;
-        border-bottom: 3px solid #F2F2F2;
+        border-bottom: 3px solid #f2f2f2;
     }
 
     .nav-item:hover {
         border: 0;
         padding: 10px 0;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid #0065fc;
     }
 
     .main-nav .nav-item:active {
         border: 0;
         padding: 10px 0;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid #0065fc;
     }
 
     /************** RECHERCHE ***************/
@@ -631,9 +616,7 @@ main ~ footer li a:hover {
     /********************************************/
 
     #filtres {
-        flex-wrap: wrap;
         gap: 15px;
-
     }
 
     #filtres ul {
@@ -645,12 +628,11 @@ main ~ footer li a:hover {
     /****************** FILTRES ******************/
     /********************************************/
 
-/****************** HEADER *********************/
-/**********************************************/
+    /****************** HEADER *********************/
+    /**********************************************/
 
-
-/****************** MAIN *********************/
-/**********************************************/
+    /****************** MAIN *********************/
+    /**********************************************/
 
     /***************** TOP ***********************/
     /********************************************/
@@ -679,11 +661,9 @@ main ~ footer li a:hover {
         background-color: #ffffff;
         padding: 0;
         margin: 10px 0;
-
     }
 
     #section-gauche .card-container {
-
         gap: 15px;
     }
 
@@ -702,7 +682,6 @@ main ~ footer li a:hover {
         border-radius: 0;
         padding: 10px 0;
     }
-
 
     #section-droite .card-container {
         gap: 10px;
@@ -727,26 +706,21 @@ main ~ footer li a:hover {
     /*******************************************/
 
     #bot {
-
         margin-top: 0;
     }
 
     #bot .card-container {
         height: auto;
         gap: 20px;
-
     }
-
 
     #bot .card {
         height: 150px;
         width: 100%;
-        padding-bottom: 15px;
     }
 
     #bot .card img {
-        height: calc(100% - 20px);
-        margin-bottom: 10px;
+        height: calc(100% - 35px);
     }
 
     /***************** BOT **********************/
@@ -758,25 +732,21 @@ main ~ footer li a:hover {
     /***************** FOOTER *****************/
     /*****************************************/
 
-    main ~  footer .flex {
+    main ~ footer .flex {
         flex-direction: column;
         gap: 20px;
     }
 
     /***************** FOOTER ****************/
     /*****************************************/
-
 }
 
 /****************** SMARTPHONE *****************/
 /**********************************************/
 
-
 /******************* TABLETTE *****************/
 /*********************************************/
 @media (min-width: 768px) and (max-width: 992px) {
-
-
     /******************* HEADER *****************/
     /*******************************************/
 
@@ -833,11 +803,8 @@ main ~ footer li a:hover {
         width: 200px;
     }
 
-
-
     /***************** BOT **********************/
     /*******************************************/
-
 
     .mh-12 {
         height: calc(100%);
@@ -878,10 +845,10 @@ main ~ footer li a:hover {
     }
 
     #bot .card img {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
 
-    #bot .card strong {
+    #bot .card h3 {
         padding-left: 15px;
     }
 
@@ -890,22 +857,20 @@ main ~ footer li a:hover {
 
     /***************** FOOTER *****************/
     /*****************************************/
-    main ~  footer {
+    main ~ footer {
         line-height: 1.7;
     }
 
-    main ~  footer .flex {
+    main ~ footer .flex {
         gap: 120px;
     }
 
     /***************** FOOTER *****************/
     /*****************************************/
-
 }
 
 /******************* TABLETTE *****************/
 /*********************************************/
-
 
 /****************** MEDIA QUERY *************/
 /*******************************************/
